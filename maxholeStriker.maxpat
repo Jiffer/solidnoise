@@ -32,6 +32,20 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
+					"id" : "obj-27",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 513.0, 393.0, 150.0, 20.0 ],
+					"text" : "changed"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : 0.0,
 					"id" : "obj-22",
 					"maxclass" : "comment",
 					"numinlets" : 1,
