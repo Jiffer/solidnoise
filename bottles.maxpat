@@ -239,7 +239,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 146.75, 180.0, 55.0, 35.0 ],
 					"style" : "",
-					"text" : "grid 1 127"
+					"text" : "grid 12 127"
 				}
 
 			}
