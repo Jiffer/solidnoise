@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 3,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -38,12 +38,64 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 267.0, 21.0, 150.0, 33.0 ],
+					"style" : "",
+					"text" : "creation arg #2 is how long to stay on for"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 93.0, 7.0, 150.0, 47.0 ],
+					"style" : "",
+					"text" : "creation arg #1 is which midi note number to write to"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 224.0, 135.0, 67.0, 33.0 ],
+					"style" : "",
+					"text" : "change on time"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 105.0, 90.0, 111.0, 33.0 ],
+					"style" : "",
+					"text" : "a number in tells it how hard to strike"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 193.0, 143.0, 29.5, 22.0 ],
+					"patching_rect" : [ 334.0, 155.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "#2"
 				}
@@ -56,7 +108,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 193.0, 110.0, 60.0, 22.0 ],
+					"patching_rect" : [ 334.0, 122.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -68,7 +120,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 170.0, 77.0, 150.0, 20.0 ],
+					"patching_rect" : [ 213.0, 217.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "stay on for this many ms"
 				}
@@ -83,7 +135,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 93.0, 155.0, 50.0, 22.0 ],
+					"patching_rect" : [ 148.0, 217.0, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -96,7 +148,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 113.0, 40.0, 30.0, 30.0 ],
+					"patching_rect" : [ 192.0, 135.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -107,7 +159,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 50.0, 267.0, 77.0, 22.0 ],
+					"patching_rect" : [ 105.0, 329.0, 77.0, 22.0 ],
 					"style" : "",
 					"text" : "s to_noteout"
 				}
@@ -122,7 +174,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.0, 230.0, 34.0, 22.0 ],
+					"patching_rect" : [ 105.0, 292.0, 34.0, 22.0 ],
 					"style" : "",
 					"text" : "#1 0"
 				}
@@ -137,7 +189,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 50.0, 191.0, 56.0, 22.0 ],
+					"patching_rect" : [ 105.0, 253.0, 56.0, 22.0 ],
 					"style" : "",
 					"text" : "delay 10"
 				}
@@ -152,7 +204,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 88.0, 225.0, 41.0, 22.0 ],
+					"patching_rect" : [ 143.0, 287.0, 41.0, 22.0 ],
 					"style" : "",
 					"text" : "#1 $1"
 				}
@@ -167,7 +219,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 50.0, 155.0, 32.5, 22.0 ],
+					"patching_rect" : [ 105.0, 217.0, 32.5, 22.0 ],
 					"style" : "",
 					"text" : "t b i"
 				}
@@ -181,7 +233,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ],
+					"patching_rect" : [ 105.0, 131.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
