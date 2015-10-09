@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 5,
+			"revision" : 3,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 624.0, 90.0, 853.0, 685.0 ],
+		"rect" : [ 393.0, 90.0, 853.0, 685.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -667,13 +667,10 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "noteNum-onTime.maxpat",
-				"bootpath" : "~/Documents/Max 7/Projects/solidnoise",
+				"bootpath" : "~/Documents/Max 7/sandbox/sol-osc/solidnoise",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "mxj.mxo",
-				"type" : "iLaX"
 			}
  ],
 		"embedsnapshot" : 0
